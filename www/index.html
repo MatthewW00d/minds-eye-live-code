@@ -21,9 +21,12 @@
     <ons-navigator id="myNavigator">
       <!-- <ons-template id="nav.html"> -->
         <ons-page>
-          <ons-tabbar position="auto">
-            <ons-tab page="page1.html" icon="ion-location">
+          <ons-tabbar position="auto" swipeable visible>
+          	<ons-tab page="page1.html" icon="fa-bullhorn">
             </ons-tab>
+            <ons-tab page="page2.html" icon="ion-location">
+            </ons-tab>
+        </ons-tabbar>
         </ons-page>
       <!-- </ons-template> -->
     </ons-navigator>
@@ -31,16 +34,35 @@
 
 	 <ons-template id="page1.html">
         <ons-page id="page1">
-  			<div class="center">
+  			<div class="center" position="center">
+  				 <img id="home-logo" src="img/minds-eye.gif">
 				<ons-button id="ons-button">START</ons-button>
+
+
 			</div>
 	 	</ons-page>
      </ons-template>
+
+         <!-- MAP page -->
+    <ons-template id="page2.html">
+      <ons-page id="page1">
+        <div id="map" class="map-container"></div>      
+        <ons-fab class="pan-button" onclick="resetMapLocation()" position="bottom right">
+          <ons-icon class="pan-button-icon" icon="fa-crosshairs">
+          </ons-icon>
+        </ons-fab>   
+      </ons-page>
+    </ons-template>
 
 
 
     <!-- ONSEN JS dependencies -->
     <script src="js/onsenui.min.js"></script>
+
+      <!--load the map script with its initMap callback after everything else-->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkCA4mRJ8ozS93WFefIGrq6CeYPSKrf3M&callback=initMap">
+    </script>
 </body>
  
 </html>
