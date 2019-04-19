@@ -1,0 +1,7 @@
+{
+    "libz.tbd": 1,
+    "AudioToolbox.framework": 1,
+    "CoreLocation.framework": 1,
+    "Social.framework": 1,
+    "MessageUI.framework": 1
+}

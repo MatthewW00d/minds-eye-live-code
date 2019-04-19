@@ -1,0 +1,59 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        }
+    },
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.uwe.theaudience"
+        }
+    }
+}

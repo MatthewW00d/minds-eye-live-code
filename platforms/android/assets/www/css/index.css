@@ -1,0 +1,44 @@
+@font-face {
+    font-family: noahRegular;
+    src: url("fonts/noah-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: noahBold;
+    src: url("fonts/noah-bold.otf") format("opentype");
+}
+.page__content {
+	background-color: white !important;
+}
+
+#ons-button {
+	background-color: #f7a70b;
+	border: 2px black solid;
+	color: black;
+	border-radius: 100px;
+	font-family: noahBold;
+	font-size: 25px;
+	width: 110px;
+	height: 42px;
+	text-align: center;
+	
+	position: absolute;
+  	top: 90%;
+  	left: 50%;
+
+  	margin: -21px 0 0 -55px;
+}
+
+#home-logo {
+	width: 100%;
+	position: absolute;
+    top: 50%;
+    margin-top: -25%;
+}
+
+.card {
+	color: black;
+	background-color: #f7a70b;
+	font-family: noahRegular;
+	text-align: justify;
+}

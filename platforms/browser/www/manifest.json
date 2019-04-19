@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Minds Eye",
+  "short_name": "Minds Eye",
+  "version": "com.uwe.mindseye",
+  "description": "Explore the city and discover memories.",
+  "author": "Radley",
+  "icons": [
+    {
+      "src": "res/icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}

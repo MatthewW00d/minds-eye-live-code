@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; connect-src *; img-src * 'self' data:; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <!-- ONSEN CSS dependencies -->
+    <link rel="stylesheet" href="css/onsenui.css">
+    <link rel="stylesheet" href="css/onsen-css-components.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <title>Mind's Eye</title>
+</head>
+
+<body>
+    <!-- ONSEN app navigation system -->
+    <ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
+
+    <template id="page1.html">
+  <ons-page id="page1">
+    <ons-toolbar>
+      <div class="center">Page 1</div>
+    </ons-toolbar>
+
+    <div class="center" position="center">
+  				 <img id="home-logo" src="img/minds-eye.gif">
+				<ons-button id="ons-button">START</ons-button>
+      </div>
+  </ons-page>
+</template>
+
+    <template id="page2.html">
+  <ons-page id="page2">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Page 1</ons-back-button></div>
+      <div class="center"></div>
+    </ons-toolbar>
+      
+	     <ons-card>
+	    <p>Mind’s Eye is an app based locative audio experience which will attempt to change perspectives and challenge expectations. The app will be similar to an audio guide of the city of Bristol, but not told through the voice of a narrator in an educated position of influence. It will instead, be told by members of the public, the people that interact with locations in Bristol the most, often on a daily basis. In my opinion, they are in a better position to tell a history of a place through their own personal experiences and memories, than one person with a fact sheet of a place. I also think it’s a more interesting historical document than a personal, general history of a location.<br><br>
+
+The locations used in the app will be in Bristol, specifically selected along a designated, predetermined route for the user of the app to walk. You will hear from people who have stories to tell from the past and present. I am interested in the dialogue between a varied cross-section of different people in society, expressing their personal viewpoints, memories, histories and stories of the same location, whether that’s the cleaner of the building, the managing director and owner of the building or the homeless person outside who’s never been inside the building. All having a dialogue with one another, inside the app audio and consequently inside the ears of the user, painting a picture inside their mind, hence naming the locative app ‘Mind’s Eye’.<br><br>
+
+To collect the audio to use in the creation of the soundscapes for the app, I am considering building a method of digital submission of MP3’s, where participants can record their responses and address a few questions about a location featured in the app along the route, which they may have a personal experience, history with or a story to tell. Then sharing this open call for responses on social media to encourage people with stories to respond. In order to not be at risk of excluding certain unrepresented minorities in society, for example, those who do not have access to social media and the internet, like the homeless. To get this audio, I will personally go out and manually collect audio interviews and stories of my own. This combined with the internet submissions should be more than enough content in order to construct a cohesive audio narrative for the app to be immersive and function successfully.</p>
+	  </ons-card>
+        <div id="map" class="map-container"></div>      
+        <ons-fab class="pan-button" onclick="resetMapLocation()" position="bottom right">
+          <ons-icon class="pan-button-icon" icon="fa-crosshairs">
+          </ons-icon>
+        </ons-fab>
+  </ons-page>
+</template>
+
+
+
+    <ons-template id="page1.html">
+        <ons-page id="page1">
+            <div class="center" position="center">
+                <img id="home-logo" src="img/minds-eye.gif">
+                <ons-button id="ons-button">START</ons-button>
+
+
+            </div>
+        </ons-page>
+    </ons-template>
+
+    <!-- MAP page -->
+    <ons-template id="page2.html">
+        <ons-page id="page1">
+
+        </ons-page>
+    </ons-template>
+
+
+    <ons-template id="page3.html">
+        <ons-page id="page3">
+            <div class="center" position="center">
+
+
+
+            </div>
+        </ons-page>
+    </ons-template>
+
+
+
+    <!-- ONSEN JS dependencies -->
+    <script src="js/onsenui.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+       <!--load the map script with its initMap callback after everything else-->
+  
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/index.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkCA4mRJ8ozS93WFefIGrq6CeYPSKrf3M&callback=initMap">
+    </script>
+
+
+ 
+</body>
+
+</html>
