@@ -33,6 +33,12 @@
 	width: 100%;
 	position: absolute;
     top: 50%;
-    margin-top: -25%; 
-	
+    margin-top: -25%;
+}
+
+.card {
+	color: black;
+	background-color: #f7a70b;
+	font-family: noahRegular;
+	text-align: justify;
 }
