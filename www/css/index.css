@@ -42,3 +42,9 @@
 	font-family: noahRegular;
 	text-align: justify;
 }
+
+#map {
+  height: 100%;
+  width: 100%;
+
+}

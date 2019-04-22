@@ -11,9 +11,35 @@ ons.ready(function () {
     
     addDegreeShowMarker();
     
+   
+    
     
 
 });
+//////////
+//////////
+// Get geo coordinates
+function getUserLocation() {
+    navigator.geolocation.getCurrentPosition
+    (onLocationSuccess, onLocationError, { enableHighAccuracy: true });
+}
+
+// Success callback for get geo coordinates
+function onLocationSuccess(position) {
+    var Latitude, Longitude;
+    Latitude = position.coords.latitude;
+    Longitude = position.coords.longitude;
+    console.log("This is my location");
+    drawUserMarker(position);
+}
+
+//ERROR
+function onLocationError(error) {
+  console.log('code: ' + error.code + '\n' +
+      'message: ' + error.message + '\n');
+}
+
+
 //from https://onsen.io/v2/api/js/ons-navigator.html
     document.addEventListener('init', function (event) {
         var page = event.target;
@@ -44,7 +70,16 @@ var mediaPlaying = false;
 //var mediaPaused = null;
 
 
-
+ function initMap() {
+        console.log('making map');
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
 
 /////////////////////////////////////////////////
 // Initialize Firebase for the whole app
@@ -363,7 +398,19 @@ function addStoryMarker(markerLat, markerLng, storyName, storyTitle, storyAudio)
             '<p> by ' + storyName + '</p><ons-button onclick="loadStoryPage(&apos;'+storyName+ '&apos;, &apos;' +storyTitle+ '&apos;, &apos;' +storyAudio+ '&apos;)">Listen </ons-button>'+
             '</div>'+
             '</div>';
-}
+ for ( var i = 0, len = localStorage.length; i < len; ++i ) {
+
+    if (localStorage.getItem(storyTitle, 'visited')) {
+      var infowindow = new google.maps.InfoWindow({
+        content: enteredContentString
+    
+      });} else {
+        var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    
+      });
+    }
+  }
 
 //Markers
 var marker = new google.maps.Marker({
@@ -408,8 +455,39 @@ function deleteMarkers() {
   clearMarkers();
   markers = [];
 }
+    
+    
+////////********* Load story page ////////
 
-/////////
+
+
+function loadStoryPage(storyName, storyTitle, storyAudio) {
+  var myNavigator = document.querySelector('ons-navigator');
+    console.log(JSON.stringify(hotspots) );
+    //pass data to page2 and navigate there
+    myNavigator.pushPage('page2.html', {data: {name: storyName, title: storyTitle, audio: storyAudio} });
+
+}
+
+    //DRAW HOTSPOT INITIALLY
+function drawHotSpot(northEdge, southEdge, eastEdge, westEdge) {
+  var hotspotShape = new google.maps.Rectangle({
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#FF0000',
+    fillOpacity: 0.35,
+    map: placeMap,
+    bounds: {
+      north: northEdge,
+      south: southEdge,
+      east: eastEdge,
+      west: westEdge
+    }
+  });
+}
+    
+    
 // Reset map to location
 function resetMapLocation() {
     navigator.geolocation.getCurrentPosition(
@@ -426,29 +504,6 @@ function resetMapLocation() {
     }, 
     { enableHighAccuracy: true });
 }
-//////////
-//////////
-// Get geo coordinates
-function getUserLocation() {
-    navigator.geolocation.getCurrentPosition
-    (onLocationSuccess, onLocationError, { enableHighAccuracy: true });
-}
-
-// Success callback for get geo coordinates
-function onLocationSuccess(position) {
-    var Latitude, Longitude;
-    Latitude = position.coords.latitude;
-    Longitude = position.coords.longitude;
-    console.log("This is my location");
-    drawUserMarker(position);
-}
-
-//ERROR
-function onLocationError(error) {
-  console.log('code: ' + error.code + '\n' +
-      'message: ' + error.message + '\n');
-}
-
 
 
 
@@ -554,5 +609,5 @@ var createAlertDialog = function(storyName, storyTitle, storyAudio) {
     }
   });
 };
-
+}
     
