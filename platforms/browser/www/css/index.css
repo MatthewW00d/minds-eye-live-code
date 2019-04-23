@@ -8,7 +8,8 @@
     src: url("fonts/noah-bold.otf") format("opentype");
 }
 .page__content {
-	background-color: white !important;
+background-color: transparent !important;
+  background: transparent !important;
 }
 
 #ons-button {
@@ -41,4 +42,10 @@
 	background-color: #f7a70b;
 	font-family: noahRegular;
 	text-align: justify;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+
 }

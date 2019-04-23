@@ -368,6 +368,30 @@ module.exports = [
         "clobbers": [
             "navigator.device.capture"
         ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-media-stream/www/MediaDevices.js",
+        "id": "phonegap-plugin-media-stream.MediaDevices",
+        "pluginId": "phonegap-plugin-media-stream",
+        "clobbers": [
+            "navigator.mediaDevices"
+        ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-media-stream/www/MediaStream.js",
+        "id": "phonegap-plugin-media-stream.MediaStream",
+        "pluginId": "phonegap-plugin-media-stream",
+        "clobbers": [
+            "MediaStream"
+        ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-media-recorder/www/MediaRecorder.js",
+        "id": "phonegap-plugin-media-recorder.MediaRecorder",
+        "pluginId": "phonegap-plugin-media-recorder",
+        "clobbers": [
+            "MediaRecorder"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -387,7 +411,9 @@ module.exports.metadata =
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-x-socialsharing": "5.4.4",
     "cordova-plugin-compat": "1.2.0",
-    "cordova-plugin-media-capture": "1.4.3"
+    "cordova-plugin-media-capture": "1.4.3",
+    "phonegap-plugin-media-stream": "1.2.1",
+    "phonegap-plugin-media-recorder": "1.1.0"
 }
 // BOTTOM OF METADATA
 });

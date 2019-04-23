@@ -63,6 +63,18 @@
                         {
                             "xml": "<feature name=\"Capture\"><param name=\"ios-package\" value=\"CDVCapture\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Stream\"><param name=\"ios-package\" value=\"CDVMediaStream\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MediaRecorder\"><param name=\"ios-package\" value=\"CDVMediaRecorder\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AudioRecorder\"><param name=\"ios-package\" value=\"CDVAudio\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -88,19 +100,19 @@
                         },
                         {
                             "xml": "<string> </string>",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "NSCameraUsageDescription": [
                         {
                             "xml": "<string> </string>",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "NSMicrophoneUsageDescription": [
                         {
                             "xml": "<string> </string>",
-                            "count": 1
+                            "count": 2
                         }
                     ]
                 }
@@ -155,6 +167,15 @@
             "MICROPHONE_USAGE_DESCRIPTION": " ",
             "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "phonegap-plugin-media-stream": {
+            "PACKAGE_NAME": "com.uwe.mindseye"
+        },
+        "phonegap-plugin-media-recorder": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "MICROPHONE_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.uwe.mindseye"
         }
     },
     "dependent_plugins": {},
@@ -527,6 +548,30 @@
             "clobbers": [
                 "navigator.device.capture"
             ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-media-stream/www/MediaDevices.js",
+            "id": "phonegap-plugin-media-stream.MediaDevices",
+            "pluginId": "phonegap-plugin-media-stream",
+            "clobbers": [
+                "navigator.mediaDevices"
+            ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-media-stream/www/MediaStream.js",
+            "id": "phonegap-plugin-media-stream.MediaStream",
+            "pluginId": "phonegap-plugin-media-stream",
+            "clobbers": [
+                "MediaStream"
+            ]
+        },
+        {
+            "file": "plugins/phonegap-plugin-media-recorder/www/MediaRecorder.js",
+            "id": "phonegap-plugin-media-recorder.MediaRecorder",
+            "pluginId": "phonegap-plugin-media-recorder",
+            "clobbers": [
+                "MediaRecorder"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -544,6 +589,8 @@
         "es6-promise-plugin": "4.2.2",
         "cordova-plugin-x-socialsharing": "5.4.4",
         "cordova-plugin-compat": "1.2.0",
-        "cordova-plugin-media-capture": "1.4.3"
+        "cordova-plugin-media-capture": "1.4.3",
+        "phonegap-plugin-media-stream": "1.2.1",
+        "phonegap-plugin-media-recorder": "1.1.0"
     }
 }

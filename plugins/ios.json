@@ -48,6 +48,12 @@
             "MICROPHONE_USAGE_DESCRIPTION": " ",
             "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
             "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "phonegap-plugin-media-recorder": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "MICROPHONE_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.uwe.mindseye"
         }
     },
     "dependent_plugins": {
@@ -56,6 +62,9 @@
         },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "phonegap-plugin-media-stream": {
+            "PACKAGE_NAME": "com.uwe.mindseye"
         }
     }
 }

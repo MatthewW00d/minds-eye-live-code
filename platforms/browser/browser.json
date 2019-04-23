@@ -62,6 +62,12 @@
         },
         "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "phonegap-plugin-media-stream": {
+            "PACKAGE_NAME": "com.uwe.mindseye"
+        },
+        "phonegap-plugin-media-recorder": {
+            "PACKAGE_NAME": "com.uwe.mindseye"
         }
     },
     "dependent_plugins": {},
@@ -469,6 +475,8 @@
         "es6-promise-plugin": "4.2.2",
         "cordova-plugin-x-socialsharing": "5.4.4",
         "cordova-plugin-compat": "1.2.0",
-        "cordova-plugin-media-capture": "1.4.3"
+        "cordova-plugin-media-capture": "1.4.3",
+        "phonegap-plugin-media-stream": "1.2.1",
+        "phonegap-plugin-media-recorder": "1.1.0"
     }
 }

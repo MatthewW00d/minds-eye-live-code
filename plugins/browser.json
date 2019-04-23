@@ -45,6 +45,9 @@
         },
         "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "phonegap-plugin-media-recorder": {
+            "PACKAGE_NAME": "com.uwe.mindseye"
         }
     },
     "dependent_plugins": {
@@ -53,6 +56,9 @@
         },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.uwe.theaudience"
+        },
+        "phonegap-plugin-media-stream": {
+            "PACKAGE_NAME": "com.uwe.mindseye"
         }
     }
 }

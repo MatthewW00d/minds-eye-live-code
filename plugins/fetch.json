@@ -120,5 +120,21 @@
         },
         "is_top_level": false,
         "variables": {}
+    },
+    "phonegap-plugin-media-recorder": {
+        "source": {
+            "type": "registry",
+            "id": "phonegap-plugin-media-recorder"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "phonegap-plugin-media-stream": {
+        "source": {
+            "type": "registry",
+            "id": "phonegap-plugin-media-stream"
+        },
+        "is_top_level": false,
+        "variables": {}
     }
 }

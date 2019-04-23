@@ -55,12 +55,21 @@
     <feature name="Capture">
         <param name="ios-package" value="CDVCapture" />
     </feature>
+    <feature name="Stream">
+        <param name="ios-package" value="CDVMediaStream" />
+    </feature>
+    <feature name="MediaRecorder">
+        <param name="ios-package" value="CDVMediaRecorder" />
+    </feature>
+    <feature name="AudioRecorder">
+        <param name="ios-package" value="CDVAudio" />
+    </feature>
     <name>Minds Eye</name>
     <description>
         Explore the city and discover memories.
     </description>
     <author email="radley@radley.co.uk" href="http://uwe.ac.uk">
-        Matt Fenlon Creative
+        Radley
     </author>
     <content src="index.html" />
     <icon src="res/icon.png" />

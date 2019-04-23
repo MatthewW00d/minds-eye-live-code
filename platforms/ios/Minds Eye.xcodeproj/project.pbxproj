@@ -38,6 +38,14 @@
 		00E38CEFEA744587B5486137 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A810E7C99214DD9A36A48BB /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B088E42608744733A8539FC3 /* CDVCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 488B16251A8543318F2C1567 /* CDVCapture.m */; };
 		91EAB14E47D145F09E0765A1 /* CDVCapture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE77D415D3584B48B849E9FF /* CDVCapture.bundle */; };
+		AD054F1E7F5449E6B1488A0C /* CDVMediaStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B90F072693143D1A93F41AF /* CDVMediaStream.m */; };
+		EDE98CA434B84D1A9A5143AE /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5164D01367483A9BECDB40 /* CameraViewController.m */; };
+		80959077FEA244B1A8890D6F /* JPSCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1825EA85A14BF09FD7DA56 /* JPSCameraButton.m */; };
+		C0B8E384DB1846059FC00738 /* UIImage+DrawBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D11C58039D4640949256D72A /* UIImage+DrawBlock.m */; };
+		428C91A128674FF79305758E /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA154E25611403B8342D749 /* CameraViewController.xib */; };
+		F9019E95058B4D7B8D44E00E /* CDVMediaRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E7E5AFCA434729A14FC1C9 /* CDVMediaRecorder.m */; };
+		E7C2C2D1B4D54CDE92828758 /* CDVAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A06128F6FE4CCB81463AA9 /* CDVAudioRecorder.m */; };
+		D705AD718B80481EB4685E92 /* CDVMediaRecorder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6B7913BFEAA248CB89E24965 /* CDVMediaRecorder.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +124,20 @@
 		488B16251A8543318F2C1567 /* CDVCapture.m */ = {isa = PBXFileReference; name = "CDVCapture.m"; path = "cordova-plugin-media-capture/CDVCapture.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		AF7D74FA28A64FD78156F2EB /* CDVCapture.h */ = {isa = PBXFileReference; name = "CDVCapture.h"; path = "cordova-plugin-media-capture/CDVCapture.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		DE77D415D3584B48B849E9FF /* CDVCapture.bundle */ = {isa = PBXFileReference; name = "CDVCapture.bundle"; path = "CDVCapture.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		4B90F072693143D1A93F41AF /* CDVMediaStream.m */ = {isa = PBXFileReference; name = "CDVMediaStream.m"; path = "phonegap-plugin-media-stream/CDVMediaStream.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3E5164D01367483A9BECDB40 /* CameraViewController.m */ = {isa = PBXFileReference; name = "CameraViewController.m"; path = "phonegap-plugin-media-stream/CameraViewController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2A1825EA85A14BF09FD7DA56 /* JPSCameraButton.m */ = {isa = PBXFileReference; name = "JPSCameraButton.m"; path = "phonegap-plugin-media-stream/JPSCameraButton.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D11C58039D4640949256D72A /* UIImage+DrawBlock.m */ = {isa = PBXFileReference; name = "UIImage+DrawBlock.m"; path = "phonegap-plugin-media-stream/UIImage+DrawBlock.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0B987801E2B54FF38F3A217C /* CDVMediaStream.h */ = {isa = PBXFileReference; name = "CDVMediaStream.h"; path = "phonegap-plugin-media-stream/CDVMediaStream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EBB75366A65342609F848A4C /* CameraViewController.h */ = {isa = PBXFileReference; name = "CameraViewController.h"; path = "phonegap-plugin-media-stream/CameraViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F176419235294DC0BB9EED18 /* JPSCameraButton.h */ = {isa = PBXFileReference; name = "JPSCameraButton.h"; path = "phonegap-plugin-media-stream/JPSCameraButton.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F077C61CAAC04037AD5D636F /* UIImage+DrawBlock.h */ = {isa = PBXFileReference; name = "UIImage+DrawBlock.h"; path = "phonegap-plugin-media-stream/UIImage+DrawBlock.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DCA154E25611403B8342D749 /* CameraViewController.xib */ = {isa = PBXFileReference; name = "CameraViewController.xib"; path = "CameraViewController.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
+		34E7E5AFCA434729A14FC1C9 /* CDVMediaRecorder.m */ = {isa = PBXFileReference; name = "CDVMediaRecorder.m"; path = "phonegap-plugin-media-recorder/CDVMediaRecorder.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		72A06128F6FE4CCB81463AA9 /* CDVAudioRecorder.m */ = {isa = PBXFileReference; name = "CDVAudioRecorder.m"; path = "phonegap-plugin-media-recorder/CDVAudioRecorder.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		10357DDC4AF34C47837676AC /* CDVMediaRecorder.h */ = {isa = PBXFileReference; name = "CDVMediaRecorder.h"; path = "phonegap-plugin-media-recorder/CDVMediaRecorder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5B42967A1D4648938F6A92ED /* CDVAudioRecorder.h */ = {isa = PBXFileReference; name = "CDVAudioRecorder.h"; path = "phonegap-plugin-media-recorder/CDVAudioRecorder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6B7913BFEAA248CB89E24965 /* CDVMediaRecorder.bundle */ = {isa = PBXFileReference; name = "CDVMediaRecorder.bundle"; path = "CDVMediaRecorder.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +214,8 @@
 				8D1107310486CEB800E47090 /* Minds Eye-Info.plist */,
 				93B2014CE9384402816BD531 /* CDVNotification.bundle */,
 				DE77D415D3584B48B849E9FF /* CDVCapture.bundle */,
+				DCA154E25611403B8342D749 /* CameraViewController.xib */,
+				6B7913BFEAA248CB89E24965 /* CDVMediaRecorder.bundle */,
 			);
 			name = Resources;
 			path = "Minds Eye/Resources";
@@ -262,6 +286,18 @@
 				1941BE00E8BF4A7F804710EB /* SocialSharing.h */,
 				488B16251A8543318F2C1567 /* CDVCapture.m */,
 				AF7D74FA28A64FD78156F2EB /* CDVCapture.h */,
+				4B90F072693143D1A93F41AF /* CDVMediaStream.m */,
+				3E5164D01367483A9BECDB40 /* CameraViewController.m */,
+				2A1825EA85A14BF09FD7DA56 /* JPSCameraButton.m */,
+				D11C58039D4640949256D72A /* UIImage+DrawBlock.m */,
+				0B987801E2B54FF38F3A217C /* CDVMediaStream.h */,
+				EBB75366A65342609F848A4C /* CameraViewController.h */,
+				F176419235294DC0BB9EED18 /* JPSCameraButton.h */,
+				F077C61CAAC04037AD5D636F /* UIImage+DrawBlock.h */,
+				34E7E5AFCA434729A14FC1C9 /* CDVMediaRecorder.m */,
+				72A06128F6FE4CCB81463AA9 /* CDVAudioRecorder.m */,
+				10357DDC4AF34C47837676AC /* CDVMediaRecorder.h */,
+				5B42967A1D4648938F6A92ED /* CDVAudioRecorder.h */,
 			);
 			name = Plugins;
 			path = "Minds Eye/Plugins";
@@ -347,6 +383,8 @@
 				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
 				713B5451A00B46C7BB8216BD /* CDVNotification.bundle in Resources */,
 				91EAB14E47D145F09E0765A1 /* CDVCapture.bundle in Resources */,
+				428C91A128674FF79305758E /* CameraViewController.xib in Resources */,
+				D705AD718B80481EB4685E92 /* CDVMediaRecorder.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +432,12 @@
 				A168A6097B01414892623ABF /* NSString+SSURLEncoding.m in Sources */,
 				CD2EB8C496D94618ACD2B53F /* SocialSharing.m in Sources */,
 				B088E42608744733A8539FC3 /* CDVCapture.m in Sources */,
+				AD054F1E7F5449E6B1488A0C /* CDVMediaStream.m in Sources */,
+				EDE98CA434B84D1A9A5143AE /* CameraViewController.m in Sources */,
+				80959077FEA244B1A8890D6F /* JPSCameraButton.m in Sources */,
+				C0B8E384DB1846059FC00738 /* UIImage+DrawBlock.m in Sources */,
+				F9019E95058B4D7B8D44E00E /* CDVMediaRecorder.m in Sources */,
+				E7C2C2D1B4D54CDE92828758 /* CDVAudioRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
